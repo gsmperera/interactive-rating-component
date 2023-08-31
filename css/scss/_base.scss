@@ -1,0 +1,72 @@
+* {
+  box-sizing: inherit;
+  // border: 1px solid red;
+}
+
+:root {
+  font-size: 16px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  font-size: 0.9375rem; // 15px
+}
+
+body {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $very-dark-blue;
+}
+
+section {
+  width: inherit;
+  height: inherit;
+  display: block;
+}
+
+h2 {
+  font-size: 1.5rem; //24px
+  font-weight: 700;
+  color: $white;
+}
+
+p,
+.content {
+  font-size: 0.9375rem; // 15px
+  font-weight: 400;
+  color: $light-grey;
+}
+
+.component-container {
+  width: 26rem; // 416px
+  height: 26.25rem; // 420px
+  border-radius: 1rem;
+  overflow: hidden;
+  background: $gradient-dark-blue;
+}
+
+.flex {
+  display: flex;
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}

@@ -1,0 +1,13 @@
+@keyframes swipe-up {
+  0% {
+    margin: 0;
+  }
+  100% {
+    margin-top: -26.25rem; // -420px
+  }
+}
+
+.go-up {
+  margin-top: -26.25rem; // -420px
+  animation: swipe-up 0.2s ease;
+}

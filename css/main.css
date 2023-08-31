@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+@keyframes swipe-up {
+  0% {
+    margin: 0;
+  }
+  100% {
+    margin-top: -26.25rem;
+  }
+}
+.go-up {
+  margin-top: -26.25rem;
+  animation: swipe-up 0.2s ease;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 16px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  font-size: 0.9375rem;
+}
+
+body {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(216, 12%, 8%);
+}
+
+section {
+  width: inherit;
+  height: inherit;
+  display: block;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+p,
+.content {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+}
+
+.component-container {
+  width: 26rem;
+  height: 26.25rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: linear-gradient(60deg, hsl(210, 29%, 13%) 0%, hsl(209, 20%, 17%) 99%);
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-ai-c {
+  align-items: center;
+}
+
+.enter-rating form {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 2.25rem;
+}
+
+.star-icon-container,
+.number-container {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  margin-bottom: 1.625rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+}
+.star-icon-container img,
+.number-container img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.number-container {
+  overflow: hidden;
+}
+.number-container input {
+  display: none;
+}
+.number-container input[type=radio]:checked + label {
+  background-color: hsl(25, 97%, 53%);
+}
+.number-container label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.number-container label:hover {
+  background-color: hsl(216, 12%, 54%);
+}
+
+.submit-btn {
+  width: 100%;
+  height: 3rem;
+  border-radius: 1.625rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  border: none;
+}
+.submit-btn:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+#thank-you {
+  padding: 2.25rem;
+  flex-direction: column;
+}
+#thank-you h2 {
+  margin-bottom: 1.125rem;
+  text-align: center;
+}
+#thank-you p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.thank-you-img-container {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+.thank-you-img-container img {
+  margin: 0 auto;
+}
+
+.result-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.125rem;
+  width: 12.375rem;
+  height: 2.25rem;
+  border-radius: 1.125rem;
+  background-color: hsl(213, 19%, 18%);
+}
+
+footer {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution p {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
